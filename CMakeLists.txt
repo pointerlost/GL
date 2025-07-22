@@ -4,7 +4,11 @@ project(OpenGL)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(OpenGL main.cpp)
+add_executable(OpenGL main.cpp
+        Shader.cpp
+        Shader.h
+        FileHandler.cpp
+        FileHandler.h)
 
 target_include_directories(OpenGL PRIVATE
         "${CMAKE_SOURCE_DIR}/vcpkg/installed/x64-linux/include/"

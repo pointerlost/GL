@@ -1,0 +1,12 @@
+// glfwSwapBuffers swaps the front and back buffers.
+
+// - The front buffer is what we currently see on the screen.
+// - The back buffer is where we draw everything for the current frame (it’s off-screen).
+
+// After swapping:
+// - The back buffer becomes the new front buffer and is displayed on the screen.
+// - The old front buffer becomes the new back buffer.
+
+// The new back buffer is not automatically cleared.
+// We need to call glClear(...) to prepare it for the next frame.
+
